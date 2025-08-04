@@ -1,0 +1,98 @@
+# this is a good script for making pretty pictures of the "mapping-v2" of the CG lipid
+# models.
+#
+# Usage:
+    # vmd -e <this_script>
+
+#mol new final_wrapped.hoomdxml type hoomd autobonds off waitfor all
+#mol new start.hoomdxml type hoomd autobonds off waitfor all
+mol new start.gsd type gsd autobonds off waitfor all
+#mol new final.hoomdxml type hoomd autobonds off waitfor all
+#mol addfile production.dcd type dcd autobonds off waitfor all step 1
+#mol addfile cg-traj.xtc type xtc autobonds off waitfor all step 1
+#mol addfile wrapped.dcd type dcd first 0 last -1 step 1 autobonds off waitfor all
+#mol addfile last300wrapped.dcd type dcd first 0 last -1 step 1 autobonds off waitfor all
+
+material change ambient AOEdgy 0.110000
+material change diffuse AOEdgy 1.000000
+material change specular AOEdgy 0.040000
+material change shininess AOEdgy 0.000000
+material change opacity AOEdgy 1.000000
+material change outline AOEdgy 2.980000
+material change outlinewidth AOEdgy 0.540000
+material change transmode AOEdgy 0.000000
+
+# start with a clean palette 
+mol delrep 0 top
+
+# licorice for all (ends up being the tails)
+mol rep Licorice 0.15 10.0 10.0
+mol representation Licorice 0.11 10.0 10.0
+mol color ColorID 6
+mol selection "name _tail _ter2"
+#mol selection "name tail ter2 head amide mhead2 ester oh1 oh2"
+mol material Glass1
+mol addrep top
+
+# yellow chol bodies
+mol representation Licorice 0.11 10.0 10.0
+mol color ColorID 4
+mol selection "name chead ring ctail cterm chme"
+mol material Glass1
+mol addrep top
+
+# purple ffa head beads
+mol representation CPK 1.700000 0.000000 10.000000 10.000000
+mol color ColorID 11
+mol selection "name head"
+mol material AOEdgy
+mol addrep top
+
+# black chol head beads
+mol representation CPK 1.700000 0.000000 10.000000 10.000000
+mol color ColorID 16
+mol selection "name chead"
+mol material AOEdgy
+mol addrep top
+
+# cyan cer head beads
+mol representation CPK 1.700000 0.000000 10.000000 10.000000
+mol color ColorID 10
+mol selection "name _mhead2"
+mol material AOEdgy
+mol addrep top
+
+# red sticky spots
+mol representation CPK 1.700000 0.000000 10.000000 10.000000
+mol color ColorID 30
+mol selection "name _oh1 _oh2 _oh3 _oh4 oh5"
+mol material AOEdgy
+mol addrep top
+
+# ester sticky beads
+mol representation CPK 1.700000 0.000000 10.000000 10.000000
+mol color ColorID 7
+mol selection "name ester"
+mol material AOEdgy
+mol addrep top
+
+
+# water
+mol representation QuickSurf 1.0 0.5 1.0 
+mol color ColorID 23
+mol selection "name 'water'"
+mol material Glass3
+mol addrep top
+
+# blue amide beads
+mol representation CPK 1.700000 0.00000 10.00000 10.00000
+mol color ColorID 0
+mol selection "name '_amide'"
+mol material AOEdgy
+mol addrep top
+
+
+#animate delete beg 0 end 0
+pbc box -color blue
+display resetview
+rotate x by -90

@@ -1,0 +1,110 @@
+<?xml version ="1.0" encoding ="UTF-8" ?>
+<hoomd_xml version="1.4">
+<configuration time_step="0" natoms="15">
+<type num="15">
+_tail  
+_tail  
+_tail  
+_tail  
+_tail  
+_amide 
+_mhead2
+_tail  
+_tail  
+_tail  
+_tail  
+_tail  
+_oh1   
+_oh2   
+_oh3   
+</type>
+<mass num="15">
+0.598458
+0.584458
+0.584458
+0.584458
+0.584458
+0.597575
+0.556458
+0.556458
+0.584458
+0.584458
+0.584458
+0.598458
+0.236214
+0.236214
+0.236214
+</mass>
+<charge num="15">
+0.000000
+0.000000
+0.000000
+0.000000
+0.000000
+0.000000
+0.000000
+0.000000
+0.000000
+0.000000
+0.000000
+0.000000
+0.000000
+0.000000
+0.000000
+</charge>
+<bond num="15">
+tail-ter2 0 1
+tail-tail 1 2
+tail-tail 2 3
+tail-tail 3 4
+amide-tail 4 5
+amide-mhead2 5 6
+mhead2-tail 6 7
+mhead2-oh1 6 12
+mhead2-oh2 6 13
+tail-tail 7 8
+tail-oh3 7 14
+tail-tail 8 9
+tail-tail 9 10
+tail-tail 10 11
+</bond>
+<angle num="18">
+ter2-tail-tail 0 1 2
+tail-tail-tail 1 2 3
+tail-tail-tail 2 3 4
+tail-tail-tail 3 4 5
+mhead2-amide-tail 4 5 6
+amide-mhead2-tail 5 6 7
+tail-tail-tail 6 7 8
+tail-tail-tail 7 8 9
+tail-tail-tail 8 9 10
+tail-tail-tail 9 10 11
+amide-mhead2-oh1 5 6 12
+amide-mhead2-oh2 5 6 13
+mhead2-tail-oh3a 6 7 14
+mhead2-tail-oh3b 6 7 14
+tail-tail-oh3 7 8 14
+oh1-mhead2-tail 12 6 7
+oh2-mhead2-tail 13 6 7
+oh1-mhead2-oh2 12 6 13
+</angle>
+<box lx="1.7991203" ly="1.7991203" lz="3.9277740" />
+<position num="15">
+-0.011       -0.017        0.150    
+-0.016       -0.020        0.088    
+-0.010       -0.016        0.026    
+-0.014       -0.019       -0.037    
+-0.008       -0.016       -0.099    
+-0.020       -0.023       -0.147    
+ 0.016        0.001       -0.170    
+ 0.015        0.032       -0.123    
+ 0.005        0.034       -0.063    
+ 0.005        0.034       -0.001    
+-0.007        0.037        0.060    
+-0.008        0.037        0.125    
+ 0.030       -0.036       -0.184    
+ 0.018        0.031       -0.183    
+ 0.041        0.021       -0.138    
+</position>
+</configuration>
+</hoomd_xml>

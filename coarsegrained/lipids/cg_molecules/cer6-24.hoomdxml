@@ -1,0 +1,135 @@
+<?xml version ="1.0" encoding ="UTF-8" ?>
+<hoomd_xml version="1.4">
+<configuration time_step="0" natoms="19">
+<type num="19">
+_ter2  
+_tail  
+_tail  
+_tail  
+_tail  
+_tail  
+_tail  
+_tail  
+_amide 
+_mhead2
+_tail  
+_tail  
+_tail  
+_tail  
+_tail  
+_oh1   
+_oh2   
+_oh3   
+_oh4   
+</type>
+<mass num="19">
+0.403639
+0.584458
+0.584458
+0.584458
+0.584458
+0.584458
+0.584458
+0.556458
+0.597575
+0.556458
+0.556458
+0.584458
+0.584458
+0.584458
+0.598458
+0.236214
+0.236214
+0.236214
+0.236214
+</mass>
+<charge num="19">
+0.000000
+0.000000
+0.000000
+0.000000
+0.000000
+0.000000
+0.000000
+0.000000
+0.000000
+0.000000
+0.000000
+0.000000
+0.000000
+0.000000
+0.000000
+0.000000
+0.000000
+0.000000
+0.000000
+</charge>
+<bond num="18">
+tail-ter2 0 1
+tail-tail 1 2
+tail-tail 2 3
+tail-tail 3 4
+tail-tail 4 5
+tail-tail 5 6
+tail-tail 6 7
+tail-oh4 7 18
+amide-tail 7 8
+amide-mhead2 8 9
+mhead2-tail 9 10
+mhead2-oh1 9 15
+mhead2-oh2 9 16
+tail-tail 10 11
+tail-oh3 10 17
+tail-tail 11 12
+tail-tail 12 13
+tail-tail 13 14
+</bond>
+<angle num="23">
+ter2-tail-tail 0 1 2
+tail-tail-tail 1 2 3
+tail-tail-tail 2 3 4
+tail-tail-tail 3 4 5
+tail-tail-tail 4 5 6
+tail-tail-tail 5 6 7
+tail-tail-tail 6 7 8
+mhead2-amide-tail 7 8 9
+amide-mhead2-tail 8 9 10
+tail-tail-tail 9 10 11
+tail-tail-tail 10 11 12
+tail-tail-tail 11 12 13
+tail-tail-tail 12 13 14
+amide-mhead2-oh1 8 9 15
+amide-mhead2-oh2 8 9 16
+mhead2-tail-oh3a 9 10 17
+mhead2-tail-oh3b 9 10 17
+tail-tail-oh3 11 10 17
+tail-tail-oh4 6 7 18
+amide-tail-oh4 8 7 18
+oh1-mhead2-tail 10 9 15
+oh2-mhead2-tail 10 9 16
+oh1-mhead2-oh2 15 9 16
+</angle>
+<box lx="1.7991203" ly="1.7991203" lz="3.9277740" />
+<position num="19">
+-0.017       -0.021        0.328    
+-0.014       -0.018        0.275    
+-0.018       -0.020        0.213    
+-0.011       -0.017        0.150    
+-0.016       -0.020        0.088    
+-0.010       -0.016        0.026    
+-0.014       -0.019       -0.037    
+-0.008       -0.016       -0.099    
+-0.020       -0.023       -0.147    
+ 0.016        0.001       -0.170    
+ 0.015        0.032       -0.123    
+ 0.005        0.034       -0.063    
+ 0.005        0.034       -0.001    
+-0.007        0.037        0.060    
+-0.008        0.037        0.125    
+ 0.030       -0.036       -0.184    
+ 0.018        0.031       -0.183    
+ 0.041        0.021       -0.138    
+ 0.014       -0.022       -0.120    
+</position>
+</configuration>
+</hoomd_xml>

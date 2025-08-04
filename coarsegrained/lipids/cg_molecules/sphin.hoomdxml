@@ -1,0 +1,72 @@
+<?xml version ="1.0" encoding ="UTF-8" ?>
+<hoomd_xml version="1.4">
+<configuration time_step="0" natoms="9">
+<type num="9">
+_amide
+_mhead2
+_tail
+_tail
+_tail
+_tail
+_tail
+_oh1
+_oh2
+</type>
+<mass num="9">
+0.597575
+0.556458
+0.556458
+0.584458
+0.584458
+0.584458
+0.598458
+0.236214
+0.236214
+</mass>
+<charge num="9">
+0.000000
+0.000000
+0.000000
+0.000000
+0.000000
+0.000000
+0.000000
+0.000000
+0.000000
+</charge>
+<bond num="8">
+amide-mhead2 0 1
+mhead2-tail 1 2
+mhead2-oh1 1 7
+mhead2-oh2 1 8
+tail-tail 2 3
+tail-tail 3 4
+tail-tail 4 5
+tail-tail 5 6
+</bond>
+<angle num="10">
+amide-mhead2-tail 0 1 2 
+tail-tail-tail 1 2 3
+tail-tail-tail 2 3 4
+tail-tail-tail 3 4 5
+tail-tail-tail 4 5 6
+amide-mhead2-oh1 0 1 7
+amide-mhead2-oh2 0 1 8
+oh1-mhead2-tail 2 1 7
+oh2-mhead2-tail 2 1 8
+oh1-mhead2-oh2 7 1 8
+</angle>
+<box lx="1.7991203" ly="1.7991203" lz="3.9277740" />
+<position num="9">
+-0.9032550       -0.5938780       -0.2608340
+-0.8562700       -0.5829530       -0.2759620
+-0.8319880       -0.5569790       -0.2275580
+-0.8261850       -0.5713780       -0.1678230
+-0.8210690       -0.5828940       -0.1040390
+-0.8097140       -0.6040110       -0.0446125
+-0.7986160       -0.6155560        0.0175298
+-0.8311460       -0.6082780       -0.2898040
+-0.8452990       -0.5507180       -0.2864790
+</position>
+</configuration>
+</hoomd_xml>

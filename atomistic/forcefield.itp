@@ -1,0 +1,26 @@
+#define _FF_CHARMM
+#include "./ffnonbonded.itp"
+#include "./ffbonded.itp"
+
+#include "./cerEOS_hairpin/cer1.itp"
+#include "./cerNSc24_hairpin/ucer2.itp"
+#include "./cerNPc24_hairpin/ucer3.itp"
+#include "./cerASc24_hairpin/ucer5.itp"
+#include "./cerAPc24_hairpin/ucer6.itp"
+#include "./cerNSc16_hairpin/ecer2.itp"
+#include "./cerNPc18_hairpin/ecer3.itp"
+#include "./cerAPc16_hairpin/ecer6.itp"
+#include "./cerNPc16_hairpin/cernp.itp"
+# include "./sphingosine/sphing.itp"
+
+#include "./c24ffa/ffa24.itp"
+#include "./c22ffa/ffa22.itp"
+#include "./c20ffa/ffa20.itp"
+#include "./c18ffa/ffa18.itp"
+#include "./c16ffa/ffa16.itp"
+#include "./c12ffa/ffa12.itp"
+
+#include "./dppc/dppc.itp"
+#include "./dspc/dspc.itp"
+
+#include "./tip3p/tip3p.itp"

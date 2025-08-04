@@ -1,0 +1,63 @@
+<?xml version ="1.0" encoding ="UTF-8" ?>
+<hoomd_xml version="1.4">
+<configuration time_step="0" natoms="10">
+<type num="10">
+_ter2
+_tail
+_tail
+_tail
+_tail
+_tail
+_tail
+_tail
+_tail
+_head
+</type>
+<mass num="10">
+0.403639
+0.584458
+0.584458
+0.584458
+0.584458
+0.584458
+0.584458
+0.584458
+0.584458
+0.625247
+</mass>
+<bond num="9">
+ter2-tail 0 1
+tail-tail 1 2
+tail-tail 2 3
+tail-tail 3 4
+tail-tail 4 5
+tail-tail 5 6
+tail-tail 6 7
+tail-tail 7 8
+head-tail 8 9
+</bond>
+<angle num="8">
+ter2-tail-tail 0 1 2
+tail-tail-tail 1 2 3
+tail-tail-tail 2 3 4
+tail-tail-tail 3 4 5
+tail-tail-tail 4 5 6
+tail-tail-tail 5 6 7
+tail-tail-tail 6 7 8
+tail-tail-head 7 8 9
+</angle>
+<box lx="22.281601" ly="22.281601" lz="35.251301" />
+<position num="9">
+1.0652301 1.0774400 0.4926590
+1.0652301 1.0774400 0.4558770
+1.0652301 1.0774400 0.3972420
+1.0652301 1.0774400 0.3436670
+1.0652301 1.0774400 0.2844560
+1.0652301 1.0774400 0.2220720
+1.0652301 1.0774400 0.1575400
+1.0652301 1.0774400 0.0946455
+1.0652301 1.0774400 0.0519082
+1.0652301 1.0774400 0.0119082
+</position>
+</configuration>
+</hoomd_xml>

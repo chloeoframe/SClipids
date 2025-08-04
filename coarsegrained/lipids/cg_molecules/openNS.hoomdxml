@@ -1,0 +1,120 @@
+<?xml version ="1.0" encoding ="UTF-8" ?>
+<hoomd_xml version="1.4">
+<configuration time_step="0" natoms="17">
+<type num="17">
+_ter2
+_tail
+_tail
+_tail
+_tail
+_tail
+_tail
+_tail
+_amide
+_mhead2
+_tail
+_tail
+_tail
+_tail
+_tail
+_oh1
+_oh2
+</type>
+<mass num="17">
+0.403639
+0.584458
+0.584458
+0.584458
+0.584458
+0.584458
+0.584458
+0.584458
+0.597575
+0.556458
+0.556458
+0.584458
+0.584458
+0.584458
+0.598458
+0.236214
+0.236214
+</mass>
+<charge num="17">
+0.000000
+0.000000
+0.000000
+0.000000
+0.000000
+0.000000
+0.000000
+0.000000
+0.000000
+0.000000
+0.000000
+0.000000
+0.000000
+0.000000
+0.000000
+0.000000
+0.000000
+</charge>
+<bond num="16">
+tail-ter2 0 1
+tail-tail 1 2
+tail-tail 2 3
+tail-tail 3 4
+tail-tail 4 5
+tail-tail 5 6
+tail-tail 6 7
+amide-tail 7 8
+amide-mhead2 8 9
+mhead2-tail 9 10
+mhead2-oh1 9 15
+mhead2-oh2 9 16
+tail-tail 10 11
+tail-tail 11 12
+tail-tail 12 13
+tail-tail 13 14
+</bond>
+<angle num="18">
+ter2-tail-tail 0 1 2
+tail-tail-tail 1 2 3
+tail-tail-tail 2 3 4
+tail-tail-tail 3 4 5
+tail-tail-tail 4 5 6
+tail-tail-tail 5 6 7
+tail-tail-tail 6 7 8
+mhead2-amide-tail 7 8 9
+amide-mhead2-tail 8 9 10
+tail-tail-tail 9 10 11
+tail-tail-tail 10 11 12
+tail-tail-tail 11 12 13
+tail-tail-tail 12 13 14
+amide-mhead2-oh1 8 9 15
+amide-mhead2-oh2 8 9 16
+oh1-mhead2-tail 10 9 15
+oh2-mhead2-tail 10 9 16
+oh1-mhead2-oh2 15 9 16
+</angle>
+<box lx="1.7991203" ly="1.7991203" lz="3.9277740" />
+<position num="17">
+0.262       0.300        1.213
+0.261       0.272        1.261
+0.246       0.277        1.322
+0.231       0.283        1.383
+0.198       0.287        1.439
+0.172       0.287        1.498
+0.138       0.297        1.553
+0.109       0.303        1.612
+0.077       0.315        1.651
+0.043       0.317        1.688
+0.053       0.340        1.743
+0.045       0.320        1.801
+0.036       0.303        1.863
+0.035       0.277        1.921
+0.032       0.261        1.983
+0.068       0.291        1.674
+0.054       0.349        1.677
+</position>
+</configuration>
+</hoomd_xml>
