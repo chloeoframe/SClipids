@@ -1,4 +1,4 @@
-## The HOOMD-Blue engine requires the tabulated potential information to be dimensionless
+The HOOMD-Blue engine requires the tabulated potential information to be dimensionless
 
 
 Therefore, the non-bonded parameters used in running an actual simulation are the the txt files in the folder "dimensionlesspotentials" 
@@ -23,11 +23,11 @@ def get_units():
     return units
 
 The "scaledpotentials" have the following scaling to get relevant units:
-# CG factor of 6 and divide by 10 to go from Angstrom to nm
+  --> CG factor of 6 and divide by 10 to go from Angstrom to nm
 column 1 [nm]: (value)*6/10 
-# Multiply by * 0.1 to go to kcal/mol * 4.18400 to go to kJ/mol
+  --> Multiply by * 0.1 to go to kcal/mol * 4.18400 to go to kJ/mol
 column 2 [kJ/mol]: (value)*0.1*4.184
-# Like column 2 to get kJ/mol, then divide by like column 1 to get kJ/mol-nm
+  --> Like column 2 to get kJ/mol, then divide by like column 1 to get kJ/mol-nm
 column 3 [kJ/mol-nm]: (value)*0.1*4.184/(6/10)
 
 Finally, in the folder scaledplots, are the plots of the potential energies (kJ/mol) as a function of distance, r (nm).
